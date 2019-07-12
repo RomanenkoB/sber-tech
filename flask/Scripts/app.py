@@ -8,7 +8,7 @@ Romanenko = [
 	{
 		# 'id': 1,
 		'exam': 'Операционные системы',
-		'result': "Удов",
+		'result': "Отлично",
 
 	},
 
@@ -45,7 +45,7 @@ def brut():
 		else:
 			continue
 brut()
-@app.route('/sber/api/Romanenko', methods=['GET'])
+@app.route('/api/Romanenko', methods=['GET'])
 
 def get_Romanenko():
     return jsonify({'Romanenko Bogdan': RM})
